@@ -4,15 +4,16 @@ public class Empleado {
 
     private String nombreEmpleado;
     private String correo;
-    private String empresa;
+    private Empresa empresa;
     private String rol;
 
-    public Empleado(String nombreEmpleado, String correo, String empresa, String rol) {
+    public Empleado(String nombreEmpleado, String correo, Empresa empresa, String rol) {
         this.nombreEmpleado = nombreEmpleado;
         this.correo = correo;
         this.empresa = empresa;
         this.rol = rol;
     }
+
 
     public String getNombreEmpleado() {
         return nombreEmpleado;
@@ -30,11 +31,11 @@ public class Empleado {
         this.correo = correo;
     }
 
-    public String getEmpresa() {
+    public Empresa getEmpresa() {
         return empresa;
     }
 
-    public void setEmpresa(String empresa) {
+    public void setEmpresa(Empresa empresa) {
         this.empresa = empresa;
     }
 

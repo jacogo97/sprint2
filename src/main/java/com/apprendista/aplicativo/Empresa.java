@@ -4,15 +4,16 @@ public class Empresa {
 
     private String nombreEmpresa;
     private String direccion;
-    private int telefono;
-    private int NIT;
+    private String telefono;
+    private String NIT;
 
-    public Empresa(String nombreEmpresa, String direccion, int telefono, int NIT) {
+    public Empresa(String nombreEmpresa, String direccion, String telefono, String NIT) {
         this.nombreEmpresa = nombreEmpresa;
         this.direccion = direccion;
         this.telefono = telefono;
         this.NIT = NIT;
     }
+
 
     public String getNombreEmpresa() {
         return nombreEmpresa;
@@ -30,19 +31,19 @@ public class Empresa {
         this.direccion = direccion;
     }
 
-    public int getTelefono() {
+    public String getTelefono() {
         return telefono;
     }
 
-    public void setTelefono(int telefono) {
+    public void setTelefono(String telefono) {
         this.telefono = telefono;
     }
 
-    public int getNIT() {
+    public String getNIT() {
         return NIT;
     }
 
-    public void setNIT(int NIT) {
+    public void setNIT(String NIT) {
         this.NIT = NIT;
     }
 }

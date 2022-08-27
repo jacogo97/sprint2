@@ -4,10 +4,12 @@ public class MovimientoDinero {
 
     private double monto;
     private String concepto;
+    private Empleado empleado;
 
-    public MovimientoDinero(double monto, String concepto) {
+    public MovimientoDinero(double monto, String concepto, Empleado empleado) {
         this.monto = monto;
         this.concepto = concepto;
+        this.empleado = empleado;
     }
 
     public double getMonto() {
@@ -24,5 +26,13 @@ public class MovimientoDinero {
 
     public void setConcepto(String concepto) {
         this.concepto = concepto;
+    }
+
+    public Empleado getEmpleado() {
+        return empleado;
+    }
+
+    public void setEmpleado(Empleado empleado) {
+        this.empleado = empleado;
     }
 }
